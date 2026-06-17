@@ -1,4 +1,4 @@
-````md
+
 <div align="center">
 
 # 👨‍💻 Ankit Singh
@@ -301,4 +301,4 @@ Defend Like An Engineer.
 ### ⚡ "Turning Security Data Into Actionable Intelligence"
 
 </div>
-```
+
