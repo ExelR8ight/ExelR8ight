@@ -101,15 +101,13 @@ My latest AI-Security research project, currently **Under Review at ACM AISec @ 
 - **The Findings:** Discovered *Defense Portability Failure* and *Defense Backfire* across 6 open-weight models and 3 frontier API models, proving that defenses which secure one model often worsen another under identical conditions.
 - **The Value:** Demonstrates advanced capability in AI Security (AppSec), LLM threat modeling, and rigorous empirical research methodology.
 
----
+### 🤖 [LLM-Assisted SOC Alert Triage (Injection-Hardened)](https://github.com/ExelR8ight/LLM-Assisted-Alert-Triage)
+<img src="https://img.shields.io/badge/Status-Live-success?style=flat-square"> <img src="https://img.shields.io/badge/Tech-Python_|_Ollama-blue?style=flat-square">
 
-## 🚧 Currently Building / Coming Soon
-
-I am actively researching and building in the intersection of **Artificial Intelligence** and **Offensive Security**.
-
-| Project | Description | Status |
-|---------|-------------|:---:|
-| 🤖 **LLM-Assisted Alert Triage (Injection-Hardened)** | An automated SOC triage system using LLMs, explicitly designed and hardened to resist prompt injection from malicious logs based on the LogPrompt findings. | <img src="https://img.shields.io/badge/Status-In_Development-yellow?style=flat-square"> |
+An automated AI triage copilot that uses local LLMs to classify raw Sysmon/Suricata alerts, expressly built to resist prompt injection.
+- **The Engine:** Ingests raw telemetry and outputs a strict JSON triage summary (Severity, MITRE ATT&CK Mapping, and Next Steps).
+- **The Security Layer:** Applies the findings from my LogPrompt-Inject research in practice. It intercepts incoming logs, applies Spotlighting (data-marking), and enforces rigorous schema validation to neutralize injected malicious instructions before the LLM processes them.
+- **The Value:** Proves I can not only find vulnerabilities in agentic AI systems, but I can architect and engineer the programmatic solutions to secure them.
 
 ---
 
