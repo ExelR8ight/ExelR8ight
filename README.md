@@ -93,6 +93,14 @@ A collection of 7 structured, end-to-end incident investigations mimicking real-
 - Covers PowerShell Empire C2, Data Exfiltration, Lateral Movement via PsExec, and Credential Dumping via LSASS.
 - Includes structured Incident Response playbooks, extracted IOCs, and proactive threat hunting hypotheses.
 
+### 💉 [LogPrompt-Inject: LLM SOC Triage Vulnerabilities](https://github.com/ExelR8ight/LogPrompt-Inject)
+<img src="https://img.shields.io/badge/Status-Under_Review-yellow?style=flat-square"> <img src="https://img.shields.io/badge/Venue-ACM_AISec-00529B?style=flat-square"> <img src="https://img.shields.io/badge/Tech-Python_|_Ollama-blue?style=flat-square">
+
+My latest AI-Security research project, currently **Under Review at ACM AISec @ CCS**.
+- **The Research:** A systematic evaluation of indirect prompt injection attacks against LLM-powered SOC triage engines via malicious log telemetry (e.g. Sysmon `CommandLine`, Suricata `http_user_agent`).
+- **The Findings:** Discovered *Defense Portability Failure* and *Defense Backfire* across 6 open-weight models and 3 frontier API models, proving that defenses which secure one model often worsen another under identical conditions.
+- **The Value:** Demonstrates advanced capability in AI Security (AppSec), LLM threat modeling, and rigorous empirical research methodology.
+
 ---
 
 ## 🚧 Currently Building / Coming Soon
@@ -101,8 +109,7 @@ I am actively researching and building in the intersection of **Artificial Intel
 
 | Project | Description | Status |
 |---------|-------------|:---:|
-| 💉 **LogPrompt Inject** | Research and frameworks demonstrating prompt injection attacks via malicious log ingestion. | <img src="https://img.shields.io/badge/Status-In_Development-yellow?style=flat-square"> |
-| 🤖 **LLM-Assisted Alert Triage** | An automated SOC triage system using LLMs, explicitly designed and hardened to resist prompt injection from malicious logs. | <img src="https://img.shields.io/badge/Status-In_Development-yellow?style=flat-square"> |
+| 🤖 **LLM-Assisted Alert Triage (Injection-Hardened)** | An automated SOC triage system using LLMs, explicitly designed and hardened to resist prompt injection from malicious logs based on the LogPrompt findings. | <img src="https://img.shields.io/badge/Status-In_Development-yellow?style=flat-square"> |
 
 ---
 
