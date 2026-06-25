@@ -200,6 +200,7 @@ C --> H
 
 | Arena | Status |
 |---|---|
+| 🛡️ **Certifications** | `Certified Ethical Hacker (CEH) — Trained` |
 | 🟩 **TryHackMe** | `SOC Analyst path — in progress` |
 | 🟥 **Hack The Box** | `SOC Analyst path — in progress` |
 | 🏴 **CTF** | `Web · OSINT · Networking` |
@@ -245,10 +246,6 @@ C --> H
 
 <p align="center">
   <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=ExelR8ight&theme=tokyo-night&bg_color=0D1117&color=8A2BE2&line=8A2BE2&point=ffffff&hide_border=true" alt="Activity Graph"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ExelR8ight&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="Trophies">
 </p>
 
 <img width="100%" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
