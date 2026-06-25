@@ -35,7 +35,6 @@
 ## 👤 Whoami
 
 <img align="right" width="300" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" alt="hacker terminal mascot"/>
-
 I am a cybersecurity professional specializing in **Security Operations (SOC)**, **Threat Detection**, and **Incident Response**. I focus on moving beyond traditional, noisy signature-based alerts by building robust, end-to-end detection pipelines that leverage behavioral analytics and automation to drastically reduce alert fatigue.
 
 > *"Security isn't just about detecting everything; it's about detecting what matters and automating the rest."*
@@ -126,4 +125,5 @@ An automated AI triage copilot that uses local LLMs to classify raw Sysmon/Suric
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ExelR8ight&layout=compact&theme=tokyonight&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Languages"/>
+</p>
 </p>
