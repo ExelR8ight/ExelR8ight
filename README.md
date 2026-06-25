@@ -180,22 +180,6 @@ An AI triage **copilot** that classifies raw Sysmon/Suricata alerts and resists 
 
 </details>
 
-<img width="100%" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
-
-## 🔬 Incident Response Workflow
-
-```mermaid
-flowchart TD
-A["📨 Alert / Hunt Hypothesis"] --> B{"True or False Positive?"}
-B -->|False Positive| C["🛠️ Tune Detection\nDocument Exclusion"]
-B -->|True Positive| D["🔍 Scope & Investigate"]
-D --> E["🗺️ Map to ATT&CK + Timeline"]
-E --> F["📦 Extract IOCs"]
-F --> G["🛡️ Contain & Remediate"]
-G --> H["📝 Write-up + Playbook"]
-C --> H
-```
-
 ## 🎮 Lab & Learning Stats
 
 | Arena | Status |
@@ -227,10 +211,6 @@ C --> H
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ExelR8ight/ExelR8ight/output/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ExelR8ight/ExelR8ight/output/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution world"/>
 </p>
 
 ## 📊 GitHub Analytics
