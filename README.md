@@ -1,13 +1,13 @@
-<!-- ===================== BANNER ===================== -->
 <p align="center">
-  <img src="assets/banner.png" width="100%" alt="Ankit Singh — Security Operations & Detection Engineering">
+  <img src="assets/banner.png" width="80%" alt="Ankit Singh — Security Operations & Detection Engineering">
 </p>
 
 <h1 align="center">Ankit Singh</h1>
-<h3 align="center">🛡️ SOC Analyst · 🎯 Threat Hunter · ⚙️ Detection Engineer</h3>
 
 <p align="center">
-  <em>Building end-to-end, AI-powered detection pipelines — from raw telemetry to automated SOAR response.</em>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&height=40&lines=🛡️+SOC+Analyst;🎯+Threat+Hunter;⚙️+Detection+Engineer;Building+End-to-End+AI-Powered+SOC+Pipelines" alt="Typing Animation" />
+  </a>
 </p>
 
 <!-- ===================== TOP BADGES ===================== -->
