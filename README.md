@@ -35,95 +35,231 @@
 ## 👤 Whoami
 
 <img align="right" width="300" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" alt="hacker terminal mascot"/>
-I am a cybersecurity professional specializing in **Security Operations (SOC)**, **Threat Detection**, and **Incident Response**. I focus on moving beyond traditional, noisy signature-based alerts by building robust, end-to-end detection pipelines that leverage behavioral analytics and automation to drastically reduce alert fatigue.
+
+```python
+class AnkitSingh:
+    def __init__(self):
+        self.role        = ["SOC Analyst", "Threat Hunter", "Detection Engineer"]
+        self.mission     = "Detect what matters. Automate the rest."
+        self.stack       = ["Splunk", "Python", "Sigma", "TheHive", "Scikit-Learn"]
+        self.researching = "LLM security & prompt-injection defense"
+        self.frameworks  = "MITRE ATT&CK"
+
+    def philosophy(self):
+        return "Detection without response is just noise — I build the whole loop."
+```
 
 > *"Security isn't just about detecting everything; it's about detecting what matters and automating the rest."*
 
----
+- 🔭 Building end-to-end, AI-powered detection pipelines
+- 🧪 First-author research on LLM agent security in SOC triage
+- 🎯 Targeting **SOC / Threat Hunting / Detection Engineering** roles
+- 📜 CEH (in progress) · active on TryHackMe & Hack The Box
 
-## 🛠️ Technical Stack & Tools
+<br clear="right"/>
+
+<img width="100%" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
+
+## 🧰 Technical Arsenal
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,powershell,bash,linux,docker,git,elasticsearch,sklearn,tensorflow,vscode&theme=dark" />
+</p>
 
 | **Category** | **Technologies & Frameworks** |
 |:---:|:---|
-| 📡 **SIEM & Log Management** | `Splunk Enterprise`, `Splunk HEC`, `Elastic (ELK) Stack` |
-| 🛡️ **Endpoint & Network Telemetry** | `Sysmon (SwiftOnSecurity)`, `Suricata IDS`, `Windows Event Logs` |
-| 🎯 **Threat Detection & Intelligence** | `MITRE ATT&CK`, `Sigma Rules`, `Atomic Red Team`, `YARA` |
-| ⚙️ **Automation & SOAR** | `TheHive`, `Python`, `PowerShell`, `Bash` |
-| 🧠 **Data Analysis & ML** | `Scikit-Learn (Isolation Forest)`, `Pandas`, `NumPy` |
+| 📡 **SIEM & Log Mgmt** | `Splunk Enterprise` · `Splunk HEC` · `Elastic (ELK)` |
+| 🛡️ **Endpoint & Network Telemetry** | `Sysmon (SwiftOnSecurity)` · `Suricata IDS` · `Windows Event Logs` |
+| 🎯 **Detection & Intel** | `MITRE ATT&CK` · `Sigma` · `Atomic Red Team` · `YARA` |
+| ⚙️ **Automation & SOAR** | `TheHive` · `Python` · `PowerShell` · `Bash` |
+| 🧠 **Data Science & ML** | `Scikit-Learn (Isolation Forest)` · `Pandas` · `NumPy` |
+| 🤖 **AI Security** | `LLM Security` · `Prompt-Injection Defense` · `Ollama` |
 
----
+### 📡 Live Skills Radar
+
+<p align="center">
+  <img width="430" src="https://quickchart.io/chart?bkg=transparent&c=%7Btype%3A%27radar%27%2Cdata%3A%7Blabels%3A%5B%27SIEM%27%2C%27Detection%20Eng%27%2C%27Threat%20Hunting%27%2C%27SOAR%2FAutomation%27%2C%27ML%20Security%27%2C%27LLM%20Security%27%5D%2Cdatasets%3A%5B%7Blabel%3A%27Proficiency%27%2Cdata%3A%5B9%2C9%2C8%2C8%2C7%2C8%5D%2CbackgroundColor%3A%27rgba(138%2C43%2C226%2C0.3)%27%2CborderColor%3A%27rgba(138%2C43%2C226%2C1)%27%2CpointBackgroundColor%3A%27%23ffffff%27%7D%5D%7D%2Coptions%3A%7Bscales%3A%7Br%3A%7BangleLines%3A%7Bcolor%3A%27rgba(255%2C255%2C255%2C0.2)%27%7D%2Cgrid%3A%7Bcolor%3A%27rgba(255%2C255%2C255%2C0.2)%27%7D%2CpointLabels%3A%7Bcolor%3A%27%23ffffff%27%7D%2Cticks%3A%7Bdisplay%3Afalse%7D%7D%7D%2Cplugins%3A%7Blegend%3A%7Blabels%3A%7Bcolor%3A%27%23ffffff%27%7D%7D%7D%7D%7D" alt="Skills Radar"/>
+</p>
+
+<img width="100%" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
+
+## 🏗️ Flagship Architecture — CogniSOC Pipeline
+
+```mermaid
+flowchart LR
+subgraph EP["🖥️ Endpoints (Win / Ubuntu)"]
+S["Sysmon"]
+SU["Suricata IDS"]
+end
+subgraph ING["📥 Ingestion"]
+UF["Universal Forwarders"]
+end
+subgraph CORE["🧠 CogniSOC Core"]
+SP["Splunk SIEM"]
+ML["Isolation Forest ML\n↓75% noise · 88% precision"]
+CE["6-Rule Correlation\n(ATT&CK-mapped)"]
+end
+subgraph RESP["🚨 Response"]
+TH["TheHive SOAR (API)"]
+AN["👤 Analyst Triage"]
+end
+S --> UF
+SU --> UF
+UF --> SP --> ML --> CE
+CE -->|Low severity| DROP["🔕 Suppress"]
+CE -->|High fidelity| TH --> AN
+```
+
+<img width="100%" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
 
 ## 🏆 Featured Portfolio Projects
 
-### 🧠 [CogniSOC: End-to-End AI-Powered SOC Architecture](https://github.com/ExelR8ight/CogniSOC)
-<img src="https://img.shields.io/badge/Status-Live-success?style=flat-square"> <img src="https://img.shields.io/badge/Tech-Splunk_|_Python_|_TheHive-black?style=flat-square">
+> 💡 *Click each project to expand the deep-dive.*
 
-My flagship project. A complete, production-ready SOC pipeline built from scratch to solve alert fatigue. 
-- **The Challenge:** Traditional rule-based SIEMs generate too much noise.
-- **The Solution:** An unsupervised **Isolation Forest** ML model that scores behavioral anomalies, routes them through a 6-rule MITRE ATT&CK correlation engine, and automatically escalates high-fidelity incidents to TheHive (SOAR).
-- **The Result:** Achieved an **88% Precision** rate and **reduced alert volume by 75%** during a 100-hour live traffic simulation.
+<details open>
+<summary><b>🧠 CogniSOC — End-to-End AI-Powered SOC</b> &nbsp; <img src="https://img.shields.io/badge/-Live-success?style=flat-square"> <img src="https://img.shields.io/badge/-Flagship-8A2BE2?style=flat-square"></summary>
+<br>
+
+A complete, production-style SOC pipeline built from scratch to **solve alert fatigue**.
+- **Challenge:** Rule-based SIEMs generate too much noise.
+- **Solution:** Unsupervised **Isolation Forest** scores behavioral anomalies → **6-rule ATT&CK correlation engine** → auto-escalation to **TheHive (SOAR)** via API.
+- **Result:** **88% precision** · **75% alert-volume reduction** across a 100-hour live-traffic simulation in a **4-machine isolated lab**.
+
+🔗 **[Explore CogniSOC →](https://github.com/ExelR8ight/CogniSOC)**
+
+</details>
 
 <details>
-<summary><b>View Architecture Flowchart</b></summary>
+<summary><b>🛡️ ATT&CK-Mapped Detection Library</b> &nbsp; <img src="https://img.shields.io/badge/-Live-success?style=flat-square"> <img src="https://img.shields.io/badge/-Detection_as_Code-blue?style=flat-square"></summary>
+<br>
+
+Version-controlled **Detection-as-Code** repo proving detection-engineering maturity.
+- **13 tuned Sigma rules** across **6 ATT&CK tactics**, translated to **Splunk SPL** + **Elastic DSL**.
+- Every rule **validated with Atomic Red Team**.
+- **False-Positive Tuning notes** (e.g., suppressing SCCM & vuln-scanner noise) — real operational maturity.
+
+🔗 **[Explore the Library →](https://github.com/ExelR8ight/ATT-CK-Detection-Library)**
+
+</details>
+
+<details>
+<summary><b>🔍 Threat Hunting & Incident Investigation Lab</b> &nbsp; <img src="https://img.shields.io/badge/-Live-success?style=flat-square"> <img src="https://img.shields.io/badge/-IR_Playbooks-orange?style=flat-square"></summary>
+<br>
+
+**7 structured, end-to-end investigations** emulating **APT29 (Cozy Bear)** & **FIN7** tradecraft.
+- PowerShell Empire C2 · Data Exfiltration · Lateral Movement (PsExec) · Credential Dumping (LSASS).
+- Ships with **IR playbooks**, **extracted IOCs**, and proactive **hunt hypotheses**.
+
+🔗 **[Explore the Hunts →](https://github.com/ExelR8ight/Threat-Hunting-Lab)**
+
+</details>
+
+<details>
+<summary><b>💉 LogPrompt-Inject — LLM SOC Triage Vulnerabilities</b> &nbsp; <img src="https://img.shields.io/badge/-Under_Review-yellow?style=flat-square"> <img src="https://img.shields.io/badge/-ACM_AISec-00529B?style=flat-square"></summary>
+<br>
+
+AI-Security research, **under review at ACM AISec @ CCS**.
+- **Research:** Indirect prompt-injection against LLM SOC-triage engines via malicious telemetry (Sysmon `CommandLine`, Suricata `http_user_agent`).
+- **Findings:** *Defense Portability Failure* & *Defense Backfire* across **6 open-weight + 3 frontier models** — defenses that secure one model can worsen another.
+- **Value:** LLM threat modeling + rigorous empirical methodology.
+
+🔗 **[Read the Research →](https://github.com/ExelR8ight/LogPrompt-Inject)**
+
+</details>
+
+<details>
+<summary><b>🤖 LLM-Assisted SOC Alert Triage (Injection-Hardened)</b> &nbsp; <img src="https://img.shields.io/badge/-Live-success?style=flat-square"> <img src="https://img.shields.io/badge/-Python_|_Ollama-blue?style=flat-square"></summary>
+<br>
+
+An AI triage **copilot** that classifies raw Sysmon/Suricata alerts and resists prompt injection.
+- **Engine:** Telemetry in → strict **JSON** out (Severity · ATT&CK mapping · Next steps).
+- **Security layer:** Applies my LogPrompt-Inject findings — **Spotlighting (data-marking)** + **schema validation** to neutralize injected instructions before the LLM sees them.
+- **Value:** I both *find* the vuln and *engineer* the fix.
+
+🔗 **[Explore the Copilot →](https://github.com/ExelR8ight/LLM-Assisted-Alert-Triage)**
+
+</details>
+
+<img width="100%" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
+
+## 🔬 Incident Response Workflow
 
 ```mermaid
-graph LR
-    A[Sysmon & Suricata] -->|Universal Forwarder| B[Splunk Indexer]
-    B -->|REST API| C[Isolation Forest ML Engine]
-    C -->|Anomaly Scoring| D{Correlation Engine}
-    D -->|Low Severity| E[Drop / Suppress]
-    D -->|High Severity| F[TheHive SOAR API]
-    F --> G[Analyst Triage]
+flowchart TD
+A["📨 Alert / Hunt Hypothesis"] --> B{"True or False Positive?"}
+B -->|False Positive| C["🛠️ Tune Detection\nDocument Exclusion"]
+B -->|True Positive| D["🔍 Scope & Investigate"]
+D --> E["🗺️ Map to ATT&CK + Timeline"]
+E --> F["📦 Extract IOCs"]
+F --> G["🛡️ Contain & Remediate"]
+G --> H["📝 Write-up + Playbook"]
+C --> H
+```
+
+## 🎮 Lab & Learning Stats
+
+| Arena | Status |
+|---|---|
+| 🟩 **TryHackMe** | `SOC Analyst path — in progress` |
+| 🟥 **Hack The Box** | `SOC Analyst path — in progress` |
+| 🏴 **CTF** | `Web · OSINT · Networking` |
+
+<details>
+<summary>🥚 <b>psst… click for a hidden easter egg</b></summary>
+<br>
+
+```
+[+] You found the buried IOC. 🕵️
+
+[+] In a real investigation, curiosity is the best detection rule.
+
+[+] Now go pin those repos and apply. 🚀
 ```
 
 </details>
 
-### 🛡️ [ATT&CK-Mapped Detection Library](https://github.com/ExelR8ight/ATT-CK-Detection-Library)
-<img src="https://img.shields.io/badge/Status-Live-success?style=flat-square"> <img src="https://img.shields.io/badge/Tech-Sigma_|_Atomic_Red_Team-blue?style=flat-square">
+<img width="100%" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
 
-A version-controlled "Detection-as-Code" repository demonstrating true detection engineering maturity. 
-- Contains **13 highly tuned Sigma rules** spanning 6 MITRE ATT&CK tactics.
-- Fully translated to **Splunk SPL** and **Elastic DSL**.
-- Validated via **Atomic Red Team** execution.
-- **Business Value:** Features rigorous "False-Positive Tuning" notes (e.g., tuning out SCCM or vulnerability scanners) to show real-world operational maturity and noise reduction.
+## 🐍 Live Contribution Pets
 
-### 🔍 [Threat Hunting & Incident Investigation Lab](https://github.com/ExelR8ight/Threat-Hunting-Lab)
-<img src="https://img.shields.io/badge/Status-Live-success?style=flat-square"> <img src="https://img.shields.io/badge/Tech-IR_Playbooks_|_Splunk-orange?style=flat-square">
-
-A collection of 7 structured, end-to-end incident investigations mimicking real-world APT tradecraft (like **APT29** and **FIN7**).
-- Covers PowerShell Empire C2, Data Exfiltration, Lateral Movement via PsExec, and Credential Dumping via LSASS.
-- Includes structured Incident Response playbooks, extracted IOCs, and proactive threat hunting hypotheses.
-
-### 💉 [LogPrompt-Inject: LLM SOC Triage Vulnerabilities](https://github.com/ExelR8ight/LogPrompt-Inject)
-<img src="https://img.shields.io/badge/Status-Under_Review-yellow?style=flat-square"> <img src="https://img.shields.io/badge/Venue-ACM_AISec-00529B?style=flat-square"> <img src="https://img.shields.io/badge/Tech-Python_|_Ollama-blue?style=flat-square">
-
-My latest AI-Security research project, currently **Under Review at ACM AISec @ CCS**.
-- **The Research:** A systematic evaluation of indirect prompt injection attacks against LLM-powered SOC triage engines via malicious log telemetry (e.g. Sysmon `CommandLine`, Suricata `http_user_agent`).
-- **The Findings:** Discovered *Defense Portability Failure* and *Defense Backfire* across 6 open-weight models and 3 frontier API models, proving that defenses which secure one model often worsen another under identical conditions.
-- **The Value:** Demonstrates advanced capability in AI Security (AppSec), LLM threat modeling, and rigorous empirical research methodology.
-
-### 🤖 [LLM-Assisted SOC Alert Triage (Injection-Hardened)](https://github.com/ExelR8ight/LLM-Assisted-Alert-Triage)
-<img src="https://img.shields.io/badge/Status-Live-success?style=flat-square"> <img src="https://img.shields.io/badge/Tech-Python_|_Ollama-blue?style=flat-square">
-
-An automated AI triage copilot that uses local LLMs to classify raw Sysmon/Suricata alerts, expressly built to resist prompt injection.
-- **The Engine:** Ingests raw telemetry and outputs a strict JSON triage summary (Severity, MITRE ATT&CK Mapping, and Next Steps).
-- **The Security Layer:** Applies the findings from my LogPrompt-Inject research in practice. It intercepts incoming logs, applies Spotlighting (data-marking), and enforces rigorous schema validation to neutralize injected malicious instructions before the LLM processes them.
-- **The Value:** Proves I can not only find vulnerabilities in agentic AI systems, but I can architect and engineer the programmatic solutions to secure them.
-
----
-
-## 📊 GitHub Stats
+> These regenerate on their own — a self-updating snake and a 3D contribution world.
 
 <p align="center">
-  <a href="https://github.com/ExelR8ight">
-    <img src="https://github-readme-stats.vercel.app/api?username=ExelR8ight&show_icons=true&theme=tokyonight&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" alt="GitHub Stats" width="48%"/>
-  </a>
-  <a href="https://github.com/ExelR8ight">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=ExelR8ight&theme=tokyonight&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakNum=C9D1D9" alt="GitHub Streak" width="48%"/>
-  </a>
+  <img src="https://raw.githubusercontent.com/ExelR8ight/ExelR8ight/output/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ExelR8ight&layout=compact&theme=tokyonight&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Languages"/>
+  <img src="https://raw.githubusercontent.com/ExelR8ight/ExelR8ight/output/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution world"/>
 </p>
+
+## 📊 GitHub Analytics
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ExelR8ight&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=8A2BE2&icon_color=8A2BE2&text_color=C9D1D9">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ExelR8ight&layout=compact&theme=tokyonight&langs_count=8&bg_color=0D1117&title_color=8A2BE2&text_color=C9D1D9">
 </p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=ExelR8ight&theme=tokyonight&background=0D1117&ring=8A2BE2&fire=8A2BE2&hide_border=true" alt="Streak">
+</p>
+
+<p align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=ExelR8ight&theme=tokyo-night&bg_color=0D1117&color=8A2BE2&line=8A2BE2&point=ffffff&hide_border=true" alt="Activity Graph"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=ExelR8ight&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="Trophies">
+</p>
+
+<img width="100%" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif">
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=Thanks+for+visiting!+%F0%9F%9B%A1%EF%B8%8F;Let's+secure+something+together." alt="outro"/>
+</p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/ankit-singh-1b0632265"><img src="https://img.shields.io/badge/Let's%20Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="mailto:ankisinsen152@gmail.com"><img src="https://img.shields.io/badge/Email%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+</p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8A2BE2,50:1a2a6c,100:0b1021&height=120&section=footer&animation=fadeIn"/>
