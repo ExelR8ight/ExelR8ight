@@ -3,25 +3,42 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+
 permissions:
   contents: write
+
 jobs:
   pets:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: Platane/snk@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # 🐍 Contribution snake
+      - name: Generate snake
+        uses: Platane/snk@v3
         with:
           github_user_name: ExelR8ight
-          outputs: dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # 🏙️ 3D contribution world (won't fail the whole run if it errors)
+      - name: Generate 3D contrib
+        continue-on-error: true
+        uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ExelR8ight
-      - run: |
+
+      - name: Collect 3D output
+        continue-on-error: true
+        run: |
           mkdir -p dist/profile-3d-contrib
-          cp -r profile-3d-contrib/* dist/profile-3d-contrib/ 2>/dev/null || true
-      - uses: crazy-max/ghaction-github-pages@v4
+          cp -f profile-3d-contrib/*.svg dist/profile-3d-contrib/ 2>/dev/null || true
+
+      # 📤 Publish everything to the "output" branch
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
