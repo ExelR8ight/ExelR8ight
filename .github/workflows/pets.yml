@@ -33,8 +33,8 @@ jobs:
       - name: Collect 3D output
         continue-on-error: true
         run: |
-          mkdir -p dist/profile-3d-contrib
-          cp -f profile-3d-contrib/*.svg dist/profile-3d-contrib/ 2>/dev/null || true
+          sudo mkdir -p dist/profile-3d-contrib
+          sudo cp -f profile-3d-contrib/*.svg dist/profile-3d-contrib/ 2>/dev/null || true
 
       # 📤 Publish everything to the "output" branch
       - name: Publish to output branch

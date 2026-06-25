@@ -213,6 +213,10 @@ An AI triage **copilot** that classifies raw Sysmon/Suricata alerts and resists 
   <img src="https://raw.githubusercontent.com/ExelR8ight/ExelR8ight/output/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ExelR8ight/ExelR8ight/output/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution world"/>
+</p>
+
 ## 📊 GitHub Analytics
 
 <p align="center">
