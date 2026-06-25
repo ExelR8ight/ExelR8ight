@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" width="80%" alt="Ankit Singh — Security Operations & Detection Engineering">
+  <img src="assets/banner.png" width="100%" alt="Ankit Singh — Security Operations & Detection Engineering">
 </p>
 
 <h1 align="center">Ankit Singh</h1>
