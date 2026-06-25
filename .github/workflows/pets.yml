@@ -9,6 +9,7 @@ jobs:
   pets:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: Platane/snk@v3
         with:
           github_user_name: ExelR8ight
